@@ -139,7 +139,14 @@ function getName(object) {
  * the returned value should be: 2.
 */
 function appleIndex(array) {
- return array.indexOf("apple");
+  let indexNum;
+  for(let i = 0; i < array.length; i++){
+    if(array[i] === "apple"){
+      indexNum = i;
+    }
+  }
+  return indexNum;
+ //return array.indexOf("apple");
 }
 
 /**
