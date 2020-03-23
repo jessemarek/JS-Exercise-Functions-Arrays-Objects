@@ -261,9 +261,9 @@ function getLastCarInfo(inventory) {
 */
 function getModelYears(inventory) {
   const modelYears =[];
-
+  let year;
   for(let i = 0; i < inventory.length; i++) {
-    let year = parseInt(inventory[i].car_year.toString());
+    year = inventory[i].car_year;
     modelYears.push(year);
   }
   return modelYears;
